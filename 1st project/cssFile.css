@@ -1,0 +1,101 @@
+body{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQyUGyDleyEitxvhzXvFtYSh3nb3OJXekmbn0vG7a6B7Ex3bH3&usqp=CAU);
+}
+li{
+	font-style: italic;
+	font-size: 20px;
+}
+h3{
+	font-style:oblique;
+	font-size: 25px ;
+}
+#div1{
+	background-image: url(https://cdn.shopify.com/s/files/1/0130/8468/8442/products/music2_large.PNG?v=1531185034);
+	position: fixed;
+  	bottom: 80px;
+  	right: 0;
+  	width: 400px;
+  	border: 2px solid black;
+  	border-radius: 30%;
+  	padding: 30px;
+  	background-repeat: no-repeat;
+	background-size: cover;;
+}
+
+button{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+button:hover{
+color:red; 
+}
+.h1{
+color: #ff00ff;
+}
+.image{
+	max-width: 40%;
+  	height: auto;
+  	border-radius: 20%;
+}
+#div{
+	position: relative;
+	width: 25%;
+	margin:100px ;
+	padding:50px;
+    border:2px solid black;
+    border-radius: 30px;
+    background-image: url(https://ae01.alicdn.com/kf/HTB1BYgFawsSMeJjSspdq6xZ4pXab/Good-quality-musical-notes-wall-sticker-New-Art-Design-heart-home-decoration-removable-Vinyl-cheap-house.jpg_q50.jpg);
+    background-repeat: no-repeat;
+  	background-size: cover;
+}
+.p1{
+	cursor: pointer;
+	
+}
+.p1:hover{
+color:cyan; 
+}
+
+.p2{
+	cursor: pointer;
+	
+}
+.p2:hover{
+color:cyan; 
+}
+.p3{
+	cursor: pointer;
+	
+}
+.p3:hover{
+color:cyan; 
+}
+.p4{
+	cursor: pointer;
+	
+}
+.p4:hover{
+color:cyan; 
+}
+.p5{
+	cursor: pointer;
+	
+}
+.p5:hover{
+color:cyan; 
+}
+.p6{
+	cursor: pointer;
+	
+}
+.p6:hover{
+color:cyan; 
+}
+.p7{
+	cursor: pointer;
+	
+}
+.p7:hover{
+color:cyan; 
+}

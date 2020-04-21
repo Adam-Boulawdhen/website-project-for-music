@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music for everyone</title>
+<link rel="stylesheet" type="text/css" href="cssFile.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body id="body">
+<div id="div1">
+	<center>
+	<h3>My Playlist</h3>
+ 	<div class="div2"></div>
+ 	</center>
+</div>
+<center>
+<div id="div">
+<h1 class="h1">Today's Top Hits</h1>
+<ul> 
+<div class="song1">
+<li class="p1">BillieEilish-everything i wanted</li>
+<button class="p1likeButton" class="p1button">Like</button>
+<button class="p1AddButton" class="p1button">Add</button>
+</div>
+<div class="song2">
+<li class="p2">JamesArthur-Impossible</li>
+<button class="p2likeButton" class="p2button">Like</button>
+<button class="p2AddButton" class="p2button">Add</button>
+</div>
+<div class="song3">
+<li class="p3">JamesArthur-Naked</li>
+<button class="p3likeButton" class="p3button">Like</button>
+<button class="p3AddButton" class="p3button">Add</button>
+</div>
+<div class="song4">
+<li class="p4">NF-remember This</li>
+<button class="p4likeButton" class="p4button">Like</button>
+<button class="p4AddButton" class="p4button">Add</button>
+</div>
+<div class="song5">
+<li class="p5">JamesArthur&AnneMarie-Rewrite The Stars</li>
+<button class="p5likeButton" class="p5button">Like</button>
+<button class="p5AddButton" class="p5button">Add</button>
+</div>
+<div class="song6">
+<li class="p6">DhaferYoussef-Soupir Eternel</li>
+<button class="p6likeButton" class="p6button">Like</button>
+<button class="p6AddButton" class="p6button">Add</button>
+</div>
+<div class="song7">
+<li class="p7">NouranAbouTaleb&SamerGeorge-Ya Ghali</li>
+<button class="p7likeButton" class="p7button">Like</button>
+<button class="p7AddButton" class="p7button">Add</button>
+</ul>
+<center><img class="image" src="http://ekladata.com/4rTNjJP2fnDR-5hw0NVMOukLB8s.jpg"></center>
+</div>
+</center>
+<script>
+var everythingIWanted = new Audio("music/everything i wanted.mp3");
+var impossible = new Audio("music/Impossible.mp3");
+var naked = new Audio("music/Naked.mp3");
+var rememberThis = new Audio("music/Remember This .mp3");
+var rewriteTheStars = new Audio("music/Rewrite The Stars .mp3");
+var soupirEternel = new Audio("music/Soupir Eternel.mp3") ;
+var yaGhali = new Audio("music/Ya Ghali .mp3") ;
+var obj ={};
+obj["BillieEilish-everything i wanted"]=everythingIWanted;
+obj["JamesArthur-Impossible"]=impossible;
+obj["JamesArthur-Naked"]=naked;
+obj["NF-remember This"]=rememberThis;
+obj["JamesArthur&AnneMarie-Rewrite The Stars"]=rewriteTheStars;
+obj["DhaferYoussef-Soupir Eternel"]=soupirEternel;
+obj["NouranAbouTaleb&SamerGeorge-Ya Ghali"]=yaGhali;
+var keys = Object.keys(obj);
+var count1 = 1;
+var count2 = 1;
+var count3 = 1;
+var count4 = 1;
+var count5 = 1;
+var count6 = 1;
+var count7 = 1;
+var like1 = 1;
+var like2 = 1;
+var like3 = 1;
+var like4 = 1;
+var like5 = 1;
+var like6 = 1;
+var like7 = 1;
+var add1 = 1 ;
+var add2 = 1 ;
+var add3 = 1 ;
+var add4 = 1 ;
+var add5 = 1 ;
+var add6 = 1 ;
+var add7 = 1 ;
+$(".p1AddButton").on("click",function(){
+	$(".song1").toggle(2000)
+	$(".div2").append('<li class="p1">BillieEilish-everything i wanted</li>')
+})
+
+$(".p2AddButton").on("click",function(){
+	$(".song2").toggle(2000)
+	$(".div2").append("<li class='p2'>JamesArthur-Impossible</li>")
+})
+$(".p3AddButton").on("click",function(){
+	$(".song3").toggle(2000)
+	$(".div2").append("<li class='p3'>JamesArthur-Naked</li>")
+})
+$(".p4AddButton").on("click",function(){
+	$(".song4").toggle(2000)
+	$(".div2").append("<li class='p4'>NF-remember This</li>")
+})
+$(".p5AddButton").on("click",function(){
+	$(".song5").toggle(2000)
+	$(".div2").append("<li class='p5'>JamesArthur&AnneMarie-Rewrite The Stars</li>")
+})
+$(".p6AddButton").on("click",function(){
+	$(".song6").toggle(2000)
+	$(".div2").append("<li class='p6'>DhaferYoussef-Soupir Eternel</li>")
+})
+$(".p7AddButton").on("click",function(){
+	$(".song7").toggle(2000)
+	$(".div2").append("<li class='p7'>NouranAbouTaleb&SamerGeorge-Ya Ghali</li>")
+})
+
+$(".image").toggle(5000);
+$(".image").toggle("display");
+$(".p1likeButton").on("click",function(){
+	if(like1%2===0){
+		$(".p1likeButton").css("background","#FCFCFC")
+		like1++;
+	}
+	else if(like1%2!==0){ 
+		$(".p1likeButton").css("background","yellow")
+		like1--;
+	}
+});
+$(".p2likeButton").on("click",function(){
+	if(like2%2===0){
+		$(".p2likeButton").css("background","#FCFCFC")
+		like2++;
+	}
+	else if(like2%2!==0){ 
+		$(".p2likeButton").css("background","yellow")
+		like2--;
+	}
+});
+$(".p3likeButton").on("click",function(){
+	if(like3%2===0){
+		$(".p3likeButton").css("background","#FCFCFC")
+		like3++;
+	}
+	else if(like3%2!==0){ 
+		$(".p3likeButton").css("background","yellow")
+		like3--;
+	}
+});
+$(".p4likeButton").on("click",function(){
+	if(like4%2===0){
+		$(".p4likeButton").css("background","#FCFCFC")
+		like4++;
+	}
+	else if(like4%2!==0){ 
+		$(".p4likeButton").css("background","yellow")
+		like4--;
+	}
+});
+$(".p5likeButton").on("click",function(){
+	if(like5%2===0){
+		$(".p5likeButton").css("background","#FCFCFC")
+		like5++;
+	}
+	else if(like5%2!==0){ 
+		$(".p5likeButton").css("background","yellow")
+		like5--;
+	}
+});
+$(".p6likeButton").on("click",function(){
+	if(like6%2===0){
+		$(".p6likeButton").css("background","#FCFCFC")
+		like6++;
+	}
+	else if(like6%2!==0){ 
+		$(".p6likeButton").css("background","yellow")
+		like6--;
+	}
+});
+
+$(".p7likeButton").on("click",function(){
+	if(like7%2===0){
+		$(".p7likeButton").css("background","#FCFCFC")
+		like7++;
+	}
+	else if(like7%2!==0){ 
+		$(".p7likeButton").css("background","yellow")
+		like7--;
+	}
+});
+
+$(".p1").on("click",function(){
+	if(count1%2===0){
+		obj[keys[0]].pause();
+		$(".p1").css("color","black");
+		count1++;
+	}
+	else if(count1%2!==0){ 
+		obj[keys[0]].play();
+		$(".p1").css("color","blue")
+		count1--;
+	}
+});
+$(".p2").on("click",function(){
+	if(count2%2===0){
+		obj[keys[1]].pause();
+		$(".p2").css("color","black");
+		count2++;
+	}
+	else if(count2%2!==0){ 
+		obj[keys[1]].play();
+		$(".p2").css("color","blue")
+		count2--;
+	}
+});
+$(".p3").on("click",function(){
+	if(count3%2===0){
+		obj[keys[2]].pause();
+		$(".p3").css("color","black");
+		count3++;
+	}
+	else if(count3%2!==0){ 
+		obj[keys[2]].play();
+		$(".p3").css("color","blue")
+		count3--;
+	}
+});
+$(".p4").on("click",function(){
+	if(count4%2===0){
+		obj[keys[3]].pause();
+		$(".p4").css("color","black");
+		count4++;
+	}
+	else if(count4%2!==0){ 
+		obj[keys[3]].play();
+		$(".p4").css("color","blue")
+		count4--;
+	}
+});
+$(".p5").on("click",function(){
+	if(count5%2===0){
+		obj[keys[4]].pause();
+		$(".p5").css("color","black");
+		count5++;
+	}
+	else if(count5%2!==0){ 
+		obj[keys[4]].play();
+		$(".p5").css("color","blue")
+		count5--;
+	}
+});
+$(".p6").on("click",function(){
+	if(count6%2===0){
+		obj[keys[5]].pause();
+		$(".p6").css("color","black");
+		count6++;
+	}
+	else if(count6%2!==0){ 
+		obj[keys[5]].play();
+		$(".p6").css("color","blue")
+		count6--;
+	}
+});
+$(".p7").on("click",function(){
+	if(count7%2===0){
+		obj[keys[6]].pause();
+		$(".p7").css("color","black");
+		count7++;
+	}
+	else if(count7%2!==0){ 
+		obj[keys[6]].play();
+		$(".p7").css("color","blue")
+		count7--;
+	}
+});
+</script>
+</body>
+</html>
